@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tables</title>
+    <style>
+        table{
+            margin: 20px;
+            padding: 20px;
+            position: relative;
+            left: 35%;
+        }
+        table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th,td{
+            text-align: center;
+            width: 150px;
+            height: 50px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Basic table</h1>
+    <table>
+        <tr>
+            <th>column1</th>
+            <th>column2</th>
+            <th>column3</th>
+        </tr>
+        <tr>
+            <td>row1</td>
+            <td>row2</td>
+            <td>row3</td>
+        </tr>
+        <tr>
+            <td>row1</td>
+            <td>row2</td>
+            <td>row3</td>
+        </tr>
+        <tr>
+            <td>row1</td>
+            <td>row2</td>
+            <td>row3</td>
+        </tr>
+    </table>
+    <h1 style="text-align: center;">Table rowspan and colspan</h1>
+    <table>
+        <tr>
+            <th>column1</th>
+            <th>column2</th>
+            <th>column3</th>
+        </tr>
+        <tr>
+            <td rowspan="2">row1</td>
+            <td>row2</td>
+            <td>row3</td>
+        </tr>
+        <tr>
+            <td colspan="2">row2</td>
+        </tr>
+        <tr>
+            <td>row1</td>
+            <td>row2</td>
+            <td>row3</td>
+        </tr>
+    </table>
+</body>
+</html>
