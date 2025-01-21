@@ -3,71 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="style.css" rel="stylesheet">
+    <title>Registration Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .data {
+            margin: 2%;
+            padding: 2%;
+        }
+        .head {
+            display: flex;
+            justify-content: space-between;
+            width: 500px;
+            height: auto;
+            padding: 20px;
+            margin: auto;
+            border: 2px solid black;
+            background: linear-gradient(gray, white);
+        }
+        input, select, textarea {
+            border-radius: 4px;
+            margin-left: 10px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        button {
+            height: 50px;
+            width: 80px;
+            border-radius: 20px;
+            margin: 0 10px;
+        }
+        .submit {
+            background-color: blue;
+            color: white;
+        }
+        .reset {
+            background-color: red;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <h1 align="center" style="margin: 5px;">Registration From</h1>
+    <h1 align="center" style="margin: 5px;">Registration Form</h1>
     <h2 align="center">Fill Your Details</h2>
     <form>
         <div class="data">
             <div class="name head">
-                <h2>Full Name:</h2>
-                <input type="text">
+                <label for="fullName"><h2>Full Name:</h2></label>
+                <input type="text" id="fullName" name="fullName" required>
             </div>
             <div class="password head">
-                <h2>Password:</h2>
-                <input type="password">
+                <label for="password"><h2>Password:</h2></label>
+                <input type="password" id="password" name="password" required>
             </div>
             <div class="age head">
-                <h2>Age:</h2>
-                <input type="number">
+                <label for="age"><h2>Age:</h2></label>
+                <input type="number" id="age" name="age" required>
             </div>
             <div class="dateofbirth head">
-                <h2>Date of Birth:</h2>
-                <input type="date">
+                <label for="dob"><h2>Date of Birth:</h2></label>
+                <input type="date" id="dob" name="dob" required>
             </div>
             <div class="gender head">
                 <h2>Gender:</h2>
                 <div class="radio">
-                    <input type="radio" name="gender">
-                    <label >Male</label>
-                    <input type="radio" name="gender">
-                    <label >Female</labe>
-                    <input type="radio" name="gender">
-                    <label>Other</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
                 </div>
-                
             </div>
             <div class="hobbies head">
                 <h2>Hobbies:</h2>
                 <div class="check">
-                    <input type="checkbox" name="hobby">
-                    <label>Reading</label><br>
-                    <input type="checkbox" name="hobby">
-                    <label>Sports</label><br>
-                    <input type="checkbox" name="hobby">
-                    <label>Travelling</label>
+                    <input type="checkbox" id="reading" name="hobby" value="reading">
+                    <label for="reading">Reading</label><br>
+                    <input type="checkbox" id="sports" name="hobby" value="sports">
+                    <label for="sports">Sports</label><br>
+                    <input type="checkbox" id="travelling" name="hobby" value="travelling">
+                    <label for="travelling">Travelling</label>
                 </div>
-                
-                
             </div>
             <div class="country head">
                 <h2>Country:</h2>
-                <select style="width: 200px; height: auto;">
-                    <option>India</option>
-                    <option>USA</option>
-                    <option>UK</option>
+                <select name="country" required>
+                    <option value="">Select your country</option>
+                    <option value="India">India </option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
                 </select>
             </div>
             <div class="about head">
-                <h2>About Yoursef:</h2>
-                <textarea style="width: auto;height: 100px;">Write about your self:</textarea>
+                <label for="about"><h2>About Yourself:</h2></label>
+                <textarea id="about" name="about" style="width: auto; height: 100px;" placeholder="Write about yourself:" required></textarea>
             </div>
         </div>
         <div class="buttons">
-            <button type="submit" style="background-color: blue;color: white;height: 50px;width: 80px; border-radius: 20px;">Submit</button>
-            <button type="reset" style="background-color: red;color: white;height: 50px;width: 80px; border-radius: 20px;">Reset</button>
+            <button type="submit" class="submit">Submit</button>
+            <button type="reset" class="reset">Reset</button>
         </div>
     </form>
 </body>
