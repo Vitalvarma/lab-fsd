@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.data{
+    margin: 2%;
+    padding: 2%;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    margin: auto;
+    border: 2px solid black;
+    background: linear-gradient(gray,white);
+}
+input{
+    border-radius: 4px;
+}

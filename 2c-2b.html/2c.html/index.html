@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <h1 align="center" style="margin: 5px;">Registration From</h1>
+    <h2 align="center">Fill Your Details</h2>
+    <form>
+        <div class="data">
+            <div class="name head">
+                <h2>Full Name:</h2>
+                <input type="text">
+            </div>
+            <div class="password head">
+                <h2>Password:</h2>
+                <input type="password">
+            </div>
+            <div class="age head">
+                <h2>Age:</h2>
+                <input type="number">
+            </div>
+            <div class="dateofbirth head">
+                <h2>Date of Birth:</h2>
+                <input type="date">
+            </div>
+            <div class="gender head">
+                <h2>Gender:</h2>
+                <div class="radio">
+                    <input type="radio" name="gender">
+                    <label >Male</label>
+                    <input type="radio" name="gender">
+                    <label >Female</labe>
+                    <input type="radio" name="gender">
+                    <label>Other</label>
+                </div>
+                
+            </div>
+            <div class="hobbies head">
+                <h2>Hobbies:</h2>
+                <div class="check">
+                    <input type="checkbox" name="hobby">
+                    <label>Reading</label><br>
+                    <input type="checkbox" name="hobby">
+                    <label>Sports</label><br>
+                    <input type="checkbox" name="hobby">
+                    <label>Travelling</label>
+                </div>
+                
+                
+            </div>
+            <div class="country head">
+                <h2>Country:</h2>
+                <select style="width: 200px; height: auto;">
+                    <option>India</option>
+                    <option>USA</option>
+                    <option>UK</option>
+                </select>
+            </div>
+            <div class="about head">
+                <h2>About Yoursef:</h2>
+                <textarea style="width: auto;height: 100px;">Write about your self:</textarea>
+            </div>
+        </div>
+        <div class="buttons">
+            <button type="submit" style="background-color: blue;color: white;height: 50px;width: 80px; border-radius: 20px;">Submit</button>
+            <button type="reset" style="background-color: red;color: white;height: 50px;width: 80px; border-radius: 20px;">Reset</button>
+        </div>
+    </form>
+</body>
+</html>
