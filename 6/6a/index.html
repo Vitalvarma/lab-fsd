@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="server.js"></script>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+        }
+        button{
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+        }
+        button:hover{
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Javascript Embedding Example</h1>
+    <p id="internal-demo">This text will change using internal Javascript</p>
+    <button onclick="changeTextInternal()">change Text(Internal JS)</button>
+    <p id="external-demo">This text will change using internal Javascript</p>
+    <button onclick="changeTextExternal()">change Text(External JS)</button>
+
+    <script>
+        function changeTextInternal(){
+            document.getElementById("internal-demo").innerHTML="This text is updated using internal javascript";
+        }
+    </script>
+</body>
+</html>
